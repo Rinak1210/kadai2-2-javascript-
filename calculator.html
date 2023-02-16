@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="calculator.css">
+
+  <title>電卓</title>
+</head>
+<body>
+  
+  
+  <form name="dentaku">
+    
+    <table>
+    
+    <!-- 液晶画面 -->
+    <tr>
+      <td colspan="4">
+        <input type="text" class="display" name="display" value=""disabled>
+      </td>
+    </tr>
+    
+    <!-- 一段目(789+)-->
+    <tr>
+      <td><input type="button" value="7" onclick="calc(this)"></td>
+      <td><input type="button" value="8" onclick="calc(this)"></td>
+      <td><input type="button" value="9" onclick="calc(this)"></td>
+      <td><input type="button" value="+" onclick="calc(this)" ></td>
+    </tr>
+    
+    <!-- 二段目（456-）-->
+    <tr>
+      <td><input type="button" value="4" onclick="calc(this)"></td>
+      <td><input type="button" value="5" onclick="calc(this)"></td>
+      <td><input type="button" value="6" onclick="calc(this)"></td>
+      <td><input type="button" value="-" onclick="calc(this)"></td>
+    </tr>
+    
+    <!-- 三段目（123*）-->
+    <tr>
+      <td><input type="button" value="1" onclick="calc(this)"></td>
+      <td><input type="button" value="2" onclick="calc(this)"></td>
+      <td><input type="button" value="3" onclick="calc(this)"></td>
+      <td><input type="button" value="*" onclick="calc(this)" name="multi_btn"></td>
+    </tr>
+    
+    <!-- 四段目（0  00 . / ）-->
+    <tr>
+      <td><input type="button" value="0" onclick="calc(this)"></td>
+      <td><input type="button" value="00" onclick="calc(this)"></td>
+      <td><input type="button" value="." onclick="calc(this)"></td>
+      <td><input type="button" value="/" onclick="calc(this)" name="div_btn"></td>
+    </tr>
+    
+    <!-- 五段目（AC  =）-->
+    <tr>
+      <td colspan="2">
+        <input type="button" value="AC" onclick="calc(this)">
+      </td>
+      <td colspan="2">
+        <input type="button" value="=" onclick="calc(this)" >
+      </td>
+    </tr>
+    
+    </table>
+    
+    
+    
+    
+  </div>
+  
+  <script src ="calculator.js"></script>
+  
+</body>
+</html>
